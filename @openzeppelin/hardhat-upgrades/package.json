@@ -1,0 +1,69 @@
+{
+  "_from": "@openzeppelin/hardhat-upgrades",
+  "_id": "@openzeppelin/hardhat-upgrades@1.8.2",
+  "_inBundle": false,
+  "_integrity": "sha512-G+z1WdsjBYQX4j0yPU+pM3rcmVgQNI6g3N05prxpXgAj8QhSDDisfWH2hC1XW8FLm7+dijz7FpUaEEdidpOA9Q==",
+  "_location": "/@openzeppelin/hardhat-upgrades",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@openzeppelin/hardhat-upgrades",
+    "name": "@openzeppelin/hardhat-upgrades",
+    "escapedName": "@openzeppelin%2fhardhat-upgrades",
+    "scope": "@openzeppelin",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/@openzeppelin/hardhat-upgrades/-/hardhat-upgrades-1.8.2.tgz",
+  "_shasum": "553c116f291bf1492dfb73ed3feda079b5b400a7",
+  "_spec": "@openzeppelin/hardhat-upgrades",
+  "_where": "/home/berlenko/dev/moralis/hardhat",
+  "bin": {
+    "migrate-oz-cli-project": "dist/scripts/migrate-oz-cli-project.js"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@openzeppelin/upgrades-core": "^1.7.3"
+  },
+  "deprecated": false,
+  "description": "[![Docs](https://img.shields.io/badge/docs-%F0%9F%93%84-blue)](https://docs.openzeppelin.com/upgrades-plugins/hardhat-upgrades) [![NPM Package](https://img.shields.io/npm/v/@openzeppelin/hardhat-upgrades.svg)](https://www.npmjs.org/package/@openzeppelin/hardhat-upgrades)",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@types/mocha": "^7.0.2",
+    "ava": "^3.9.0",
+    "ethers": "^5.0.5",
+    "fgbg": "^0.1.4",
+    "hardhat": "^2.0.2",
+    "promisified": "^0.5.0",
+    "rimraf": "^3.0.2"
+  },
+  "files": [
+    "/dist",
+    "/src"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@openzeppelin/hardhat-upgrades",
+  "peerDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "hardhat": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenZeppelin/openzeppelin-upgrades/tree/master/packages/plugin-hardhat"
+  },
+  "scripts": {
+    "prepare": "tsc -b",
+    "prepublish": "rimraf dist *.tsbuildinfo",
+    "test": "tsc -b && bash scripts/test.sh",
+    "test:watch": "fgbg 'bash scripts/test.sh --watch' 'tsc -b --watch' --",
+    "version": "node ../../scripts/bump-changelog.js"
+  },
+  "version": "1.8.2"
+}
